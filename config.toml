@@ -1,0 +1,81 @@
+baseURL = 'https://garden.nategb.com/'
+languageCode = 'en-us'
+title = 'Nathan Gerard-Bowen'
+theme = 'ng'
+relateiveURLs = false
+disablePathtoLower = true
+enableGitInfo = true
+ignoreFiles = [
+    "/content/templates/*",
+    "/content/private/*",
+]
+
+[params]
+  dateform        = "Jan 2, 2006"
+  dateformShort   = "Jan 2"
+  dateformNum     = "2006-01-02"
+  dateformNumTime = "2006-01-02 15:04"
+  EnableThemeToggle = true
+
+  # Subtitle for home
+  homeSubtitle = "Where knowledge comes to grow"
+
+  # Set disableReadOtherPosts to true in order to hide the links to other posts.
+  disableReadOtherPosts = false
+
+  # Enable sharing buttons, if you like
+  enableSharingButtons = true
+
+  # Metadata mostly used in document's head
+  description = "A place to prune my thoughts"
+  keywords = "garden"
+  images = [""]
+
+[taxonomies]
+    category = "garden"
+    tag      = "tags"
+    series   = "series"
+
+[languages]
+  [languages.en]
+    title = "Digital Garden"
+    subtitle = "A place to prune my thoughts"
+    keywords = ""
+    copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
+
+
+    [languages.en.params.logo]
+      logoText = "cd home"
+      logoHomeLink = "https://nategb.com/"
+    # or
+    #
+    # path = "/img/your-example-logo.svg"
+    # alt = "Your example logo alt text"
+
+  # And you can even create generic menu
+  [[menu.main]]
+    identifier = "garden"
+    name       = "Garden Home"
+    url        = "/"
+	
+[markup]
+    [markup.tableOfContents]
+        endLevel = 3
+        ordered = true
+        startLevel = 2
+    [markup.highlight]
+        noClasses = false
+        anchorLineNos = false
+        codeFences = true
+        guessSyntax = true
+        hl_Lines = ""
+        lineAnchors = ""
+        lineNoStart = 1
+        lineNos = true
+        lineNumbersInTable = true
+        style = "dracula"
+    [frontmatter]
+        lastmod = ["lastmod", ":git", "date", "publishDate"]
+        publishDate = ["publishDate", "date"]
+    [markup.goldmark.renderer]
+        unsafe = true

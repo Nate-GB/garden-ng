@@ -1,0 +1,9 @@
+{
+  "newLinkFormat": "absolute",
+  "useMarkdownLinks": true,
+  "spellcheck": true,
+  "alwaysUpdateLinks": true,
+  "newFileLocation": "folder",
+  "newFileFolderPath": "notes",
+  "attachmentFolderPath": "notes/images"
+}

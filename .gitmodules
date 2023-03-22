@@ -1,0 +1,3 @@
+[submodule "themes/ng"]
+	path = themes/ng
+	url = https://github.com/rhazdon/hugo-theme-hello-friend-ng
